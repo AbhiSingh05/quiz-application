@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet"
+        href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="Quizz()">
+    <div class="main">
+        <!-- <h1>Quiz App</h1> -->
+
+        <div class="container">
+            <h1 id="simple_quiz">Simple Quiz</h1>
+            <div class="quiz">
+                <h3 id="question">Questions goes here</h3>
+                <div id="answer-btn">
+                    <button id="btn1" class="btn" onclick="checkAnswer(this);"></button>
+                    <button id="btn2" class="btn" onclick="checkAnswer(this);"></button>
+                    <button id="btn3" class="btn" onclick="checkAnswer(this);"></button>
+                    <button id="btn4" class="btn" onclick="checkAnswer(this);"></button>
+                </div>
+                <button id="next-btn" style="display: none;">Next</button>
+
+            </div>
+            <div class="score" style="display: none;">
+
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+<!-- let url = `https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple`; -->
